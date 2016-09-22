@@ -1,0 +1,38 @@
+[
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\useleavedialog.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\useleavedialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hostnamedialog.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\hostnamedialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\alljoynerrordialog.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\alljoynerrordialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hoststartdialog.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\hoststartdialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\usejoindialog.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\usejoindialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\main.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\main.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\hoststopdialog.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\hoststopdialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\host.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\host.xml"
+    },
+    {
+        "merged": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\build\\intermediates\\res\\merged\\debug\\layout\\use.xml",
+        "source": "C:\\Users\\t_ste\\AndroidStudioProjects\\chat\\app\\src\\main\\res\\layout\\use.xml"
+    }
+]
