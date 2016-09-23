@@ -4,115 +4,34 @@
     api-level="23"
     density="xhdpi"
     format="7"
-    timestamp="108184255105487"
-    token="-8892813868594696369"
-    verifier="CLASS_ADDED" >
+    timestamp="13103104704000"
+    token="-8892813868594696369" >
 
     <task
         name="javac"
-        duration="578" />
+        duration="375" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="88" />
+        duration="43" />
     <task
         name="verifier"
-        duration="12" />
+        duration="2" />
 
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\res\resources-debug.ap_"
-        type="RESOURCES" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-        type="DEX" />
     <artifact
         location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
         type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3f59c3daa9103fb397893cf608dee045b6ebcacf\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_99802afb2c999040e6be1324d039fdb20aad993d\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-        type="DEX" />
-    <artifact
-        location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\2\alljoyn_c10ef5769924e0daf7ffa67aef2106b8358313e5\classes.dex"
-        type="DEX" />
 
-    <build timestamp="107678640718191" >
+    <build timestamp="12950408525037" >
         <artifact
             location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\outputs\apk\app-debug.apk"
             type="MAIN" />
     </build>
-    <build
-        timestamp="108184255105487"
-        verifier="CLASS_ADDED" >
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\res\resources-debug.ap_"
-            type="RESOURCES" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_3\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_2\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_4\classes.dex"
-            type="DEX" />
+    <build timestamp="13103104704000" >
         <artifact
             location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_5\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_8\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3f59c3daa9103fb397893cf608dee045b6ebcacf\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_9\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_6\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_7\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_0\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_99802afb2c999040e6be1324d039fdb20aad993d\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\5\slice_1\classes.dex"
-            type="DEX" />
-        <artifact
-            location="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\2\alljoyn_c10ef5769924e0daf7ffa67aef2106b8358313e5\classes.dex"
             type="DEX" />
     </build>
 

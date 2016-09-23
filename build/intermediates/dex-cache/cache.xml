@@ -1,26 +1,3 @@
 <?xml version="1.0" encoding="utf-8"?>
-<items version="2" >
+<items version="2" />
 
-    <item
-        jar="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="b0c795f593f745c74e8de40491e6965a41619bd9">
-        <dex dex="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_3f59c3daa9103fb397893cf608dee045b6ebcacf\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="6c9cce3ae027de6e9feabd492e51bd2b9e0a5c02">
-        <dex dex="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_99802afb2c999040e6be1324d039fdb20aad993d\classes.dex" />
-    </item>
-    <item
-        jar="C:\Users\t_ste\AndroidStudioProjects\chat\app\libs\alljoyn.jar"
-        jumboMode="true"
-        revision="24.0.2"
-        sha1="fab551e675fbdb39f8fbabe164622ef9085a5fe5">
-        <dex dex="C:\Users\t_ste\AndroidStudioProjects\chat\app\build\intermediates\transforms\dex\debug\folders\1000\2\alljoyn_c10ef5769924e0daf7ffa67aef2106b8358313e5\classes.dex" />
-    </item>
-
-</items>

@@ -21,6 +21,11 @@ import org.alljoyn.bus.sample.chat.Observable;
 import org.alljoyn.bus.sample.chat.Observer;
 import org.alljoyn.bus.sample.chat.DialogBuilder;
 
+import android.content.Context;
+import android.location.Criteria;
+import android.location.Location;
+import android.location.LocationListener;
+import android.location.LocationManager;
 import android.os.Handler;
 import android.os.Message;
 import android.os.Bundle;
@@ -44,7 +49,8 @@ import java.util.List;
 
 public class UseActivity extends Activity implements Observer {
     private static final String TAG = "chat.UseActivity";
-
+    public String Latitude;
+    public String Logitude;
     public void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, "onCreate()");
         super.onCreate(savedInstanceState);
@@ -89,8 +95,14 @@ public class UseActivity extends Activity implements Observer {
         mLocationButton.setOnClickListener(new View.OnClickListener(){
             public void onClick(View v) {
                 //GET DEVICE LOCATION AUTO INPUT IN MESSAGE AND SEND.
-            }
-        });
+                // instantiate the location manager, note you will need to request permissions in your manifest
+                LocationManager locationManager = (LocationManager) getSystemService(Context.LOCATION_SERVICE);
+                // get the last know location from your location manager.
+                Location location= locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
+                // now get the lat/lon from the location and do something with it.
+                Log.i(String.valueOf(location.getLatitude()), String.valueOf(location.getLongitude()));
+            }});
+
         /*
          * Keep a pointer to the Android Appliation class around.  We use this
          * as the Model for our MVC-based application.    Whenever we are started
@@ -270,4 +282,47 @@ public class UseActivity extends Activity implements Observer {
     private TextView mChannelName;
 
     private TextView mChannelStatus;
+    public void getCurrentLocation() {
+        LocationManager locationManager;
+        String context = Context.LOCATION_SERVICE;
+        locationManager = (LocationManager) getSystemService(context);
+        Criteria crta = new Criteria();
+        crta.setAccuracy(Criteria.ACCURACY_FINE);
+        crta.setAltitudeRequired(false);
+        crta.setBearingRequired(false);
+        crta.setCostAllowed(true);
+        crta.setPowerRequirement(Criteria.POWER_LOW);
+        String provider = locationManager.getBestProvider(crta, true);
+
+        locationManager.requestLocationUpdates(provider, 1000, 0,
+                new LocationListener() {
+                    @Override
+                    public void onStatusChanged(String provider, int status,
+                                                Bundle extras) {
+                    }
+
+                    @Override
+                    public void onProviderEnabled(String provider) {
+                    }
+
+                    @Override
+                    public void onProviderDisabled(String provider) {
+                    }
+
+                    @Override
+                    public void onLocationChanged(Location location) {
+                        if (location != null) {
+                            double lat = location.getLatitude();
+                            double lng = location.getLongitude();
+                            if (lat != 0.0 && lng != 0.0) {
+                                System.out.println("WE GOT THE LOCATION");
+                                System.out.println(lat);
+                                System.out.println(lng);
+                            }
+                        }
+
+                    }
+
+                });
+    }
 }
