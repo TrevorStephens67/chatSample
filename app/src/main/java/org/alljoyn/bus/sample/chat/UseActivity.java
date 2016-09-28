@@ -22,7 +22,9 @@ import org.alljoyn.bus.sample.chat.Observer;
 import org.alljoyn.bus.sample.chat.DialogBuilder;
 
 import android.content.Context;
+import android.location.Address;
 import android.location.Criteria;
+import android.location.Geocoder;
 import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
@@ -45,12 +47,15 @@ import android.widget.TextView;
 
 import android.util.Log;
 
+import java.io.IOException;
 import java.util.List;
+import java.util.Locale;
 
 public class UseActivity extends Activity implements Observer {
     private static final String TAG = "chat.UseActivity";
     public String Latitude;
     public String Logitude;
+
     public void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, "onCreate()");
         super.onCreate(savedInstanceState);
@@ -100,8 +105,9 @@ public class UseActivity extends Activity implements Observer {
                 // get the last know location from your location manager.
                 Location location= locationManager.getLastKnownLocation(LocationManager.NETWORK_PROVIDER);
                 // now get the lat/lon from the location and do something with it.
-                Log.i(String.valueOf(location.getLatitude()), String.valueOf(location.getLongitude()));
+                FindAddress(location.getLatitude(), location.getLongitude());
             }});
+
 
         /*
          * Keep a pointer to the Android Appliation class around.  We use this
@@ -125,6 +131,27 @@ public class UseActivity extends Activity implements Observer {
          * from other components.
          */
         mChatApplication.addObserver(this);
+
+    }
+
+    public void FindAddress(double Latitude,double Longitude){
+        Geocoder geocoder;
+        List<Address> addresses = null;
+        geocoder = new Geocoder(this,Locale.getDefault());
+
+        try {
+            addresses = geocoder.getFromLocation(Latitude ,Longitude ,1);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        String address = addresses.get(0).getAddressLine(0); // If any additional address line present than only, check with max available address lines by getMaxAddressLineIndex()
+        String city = addresses.get(0).getLocality();
+        String state = addresses.get(0).getAdminArea();
+        String country = addresses.get(0).getCountryName();
+        String postalCode = addresses.get(0).getPostalCode();
+        String knownName = addresses.get(0).getFeatureName();
+        Log.i(address,city+" "+state+" "+country+" "+postalCode+" "+knownName);
+        mChatApplication.newLocalUserMessage(address+" "+city+" "+state+" "+country+" "+postalCode+" "+knownName);
 
     }
 
@@ -282,47 +309,5 @@ public class UseActivity extends Activity implements Observer {
     private TextView mChannelName;
 
     private TextView mChannelStatus;
-    public void getCurrentLocation() {
-        LocationManager locationManager;
-        String context = Context.LOCATION_SERVICE;
-        locationManager = (LocationManager) getSystemService(context);
-        Criteria crta = new Criteria();
-        crta.setAccuracy(Criteria.ACCURACY_FINE);
-        crta.setAltitudeRequired(false);
-        crta.setBearingRequired(false);
-        crta.setCostAllowed(true);
-        crta.setPowerRequirement(Criteria.POWER_LOW);
-        String provider = locationManager.getBestProvider(crta, true);
 
-        locationManager.requestLocationUpdates(provider, 1000, 0,
-                new LocationListener() {
-                    @Override
-                    public void onStatusChanged(String provider, int status,
-                                                Bundle extras) {
-                    }
-
-                    @Override
-                    public void onProviderEnabled(String provider) {
-                    }
-
-                    @Override
-                    public void onProviderDisabled(String provider) {
-                    }
-
-                    @Override
-                    public void onLocationChanged(Location location) {
-                        if (location != null) {
-                            double lat = location.getLatitude();
-                            double lng = location.getLongitude();
-                            if (lat != 0.0 && lng != 0.0) {
-                                System.out.println("WE GOT THE LOCATION");
-                                System.out.println(lat);
-                                System.out.println(lng);
-                            }
-                        }
-
-                    }
-
-                });
-    }
 }
