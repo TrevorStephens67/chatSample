@@ -53,8 +53,6 @@ import java.util.Locale;
 
 public class UseActivity extends Activity implements Observer {
     private static final String TAG = "chat.UseActivity";
-    public String Latitude;
-    public String Logitude;
 
     public void onCreate(Bundle savedInstanceState) {
         Log.i(TAG, "onCreate()");
